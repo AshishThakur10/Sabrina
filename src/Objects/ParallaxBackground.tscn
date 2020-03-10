@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/background/Backgrounds - FREE/Background 01/PARALLAX/layer_01_1920 x 1080.png" type="Texture" id=1]
+[ext_resource path="res://assets/background/Backgrounds - FREE/Background 01/PARALLAX/layer_02_1920 x 1080.png" type="Texture" id=2]
+[ext_resource path="res://assets/background/Backgrounds - FREE/Background 01/PARALLAX/layer_03_1920 x 1080.png" type="Texture" id=3]
+[ext_resource path="res://assets/background/Backgrounds - FREE/Background 01/PARALLAX/layer_04_1920 x 1080.png" type="Texture" id=4]
+[ext_resource path="res://assets/background/Backgrounds - FREE/Background 01/PARALLAX/layer_05_2048 x 1546.png" type="Texture" id=5]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="background" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.1, 1 )
+motion_offset = Vector2( 4, 0 )
+motion_mirroring = Vector2( 1930, 0 )
+
+[node name="layer_01_1920 x 1080" type="Sprite" parent="background"]
+scale = Vector2( 1.005, 1 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+editor/display_folded = true
+motion_scale = Vector2( 0.2, 1 )
+motion_offset = Vector2( 2, 0 )
+motion_mirroring = Vector2( 1930, 0 )
+
+[node name="layer_02_1920 x 1080" type="Sprite" parent="ParallaxLayer2"]
+scale = Vector2( 1.006, 1 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+editor/display_folded = true
+motion_scale = Vector2( 0.4, 1 )
+motion_offset = Vector2( 1, 0 )
+motion_mirroring = Vector2( 1930, 0 )
+
+[node name="layer_03_1920 x 1080" type="Sprite" parent="ParallaxLayer3"]
+scale = Vector2( 1.006, 1 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+editor/display_folded = true
+visible = false
+motion_scale = Vector2( 0.8, 1 )
+motion_offset = Vector2( 1, 0 )
+motion_mirroring = Vector2( 1930, 0 )
+
+[node name="layer_04_1920 x 1080" type="Sprite" parent="ParallaxLayer4"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+editor/display_folded = true
+visible = false
+motion_scale = Vector2( 0.8, 1 )
+motion_offset = Vector2( 1, 0 )
+motion_mirroring = Vector2( 1930, 0 )
+
+[node name="layer_05_2048 x 1546" type="Sprite" parent="ParallaxLayer5"]
+visible = false
+scale = Vector2( 1.00086, 0.698596 )
+texture = ExtResource( 5 )
+centered = false
