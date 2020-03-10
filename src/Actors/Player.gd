@@ -24,11 +24,13 @@ func _physics_process(delta: float) -> void:
 		$AudioStreamPlayer.play()
 		$playerSprite/AnimationPlayer.play("jump")
 	if Input.is_action_just_pressed("move_right"):
+		SOUNDS.find_node("click").play()
 		$playerSprite.flip_h = false
 		$playerSprite/AnimationPlayer.play("New Anim")
 	if Input.is_action_just_released("move_right"):
 		$playerSprite/AnimationPlayer.play("New Anim (2)")
 	if Input.is_action_just_pressed("move_left"):
+		SOUNDS.find_node("click").play()
 		$playerSprite.flip_h = true
 		$playerSprite/AnimationPlayer.play("New Anim")
 	if Input.is_action_just_released("move_left"):
