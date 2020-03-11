@@ -78,7 +78,7 @@ margin_top = 993.815
 margin_right = 557.025
 margin_bottom = 1050.82
 custom_fonts/font = ExtResource( 7 )
-text = "vr 1.00.1"
+text = "vr 0.00.1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
