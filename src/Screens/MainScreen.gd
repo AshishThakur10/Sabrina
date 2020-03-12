@@ -3,7 +3,7 @@ extends Control
 
 
 func _ready() -> void:
-	SOUNDS.find_node("musice").play()
+	SOUNDS.find_node("musice").play() 
 	pass # Replace with function body.
 
 

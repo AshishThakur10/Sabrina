@@ -88,7 +88,6 @@ left and jump key to
  jump through the gaps."
 
 [node name="double-left" type="Sprite" parent="."]
-editor/display_folded = true
 position = Vector2( 248.641, 426.79 )
 texture = ExtResource( 4 )
 
